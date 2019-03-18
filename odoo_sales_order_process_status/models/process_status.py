@@ -6,6 +6,7 @@ from odoo import models, fields
 
 class ProcessStatuses(models.Model):
     _name = "process.statuses"
+    _order = "sequence"
 
     name = fields.Char(string='Name')
     sequence = fields.Integer('Sequence', default=10)
